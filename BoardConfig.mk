@@ -112,6 +112,7 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # Display
 MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
