@@ -2,7 +2,7 @@
 <device name="Android">
     <item name="screen.on">63</item>
     <item name="screen.full">261</item>
-    <array name="cpu.core.speeds">
+    <array name="cpu.core_speeds">
         <value>200000</value>
         <value>499200</value>
         <value>533333</value>
