@@ -12,5 +12,6 @@
 -->
 
 <resources>
-    <item name="fingerprint_sensor_location_fraction_y" type="fraction">73.91%</item>
+    <!-- Whether to add AGPS parameter settings -->
+    <bool name="config_agps_enabled">true</bool>
 </resources>
