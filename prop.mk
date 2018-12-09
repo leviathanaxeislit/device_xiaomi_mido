@@ -192,3 +192,21 @@ persist.sys.usb.config.extra=none
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
+
+# GPS
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.gps.qc_nlp_in_use=1 \
+persist.loc.nlp_name=com.qualcomm.location \
+ro.gps.agps_provider=1
+
+# Additions
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.camera.HAL3.enabled=1 \
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
+camera.hal1.packagelist=com.whatsapp \
+ro.sf.lcd_density=420 \
+ro.debuggable=1 \
+persist.sys.usb.config=adb \
+ro.secure=0 \
+ro.adb.secure=0
