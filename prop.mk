@@ -193,7 +193,6 @@ persist.sys.usb.config.extra=none
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
 
-
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.gps.qc_nlp_in_use=1 \
@@ -210,3 +209,8 @@ ro.debuggable=1 \
 persist.sys.usb.config=adb \
 ro.secure=0 \
 ro.adb.secure=0
+
+# Wifi-Display
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.debug.wfd.enable=1 \
+persist.sys.wfd.virtual=0
