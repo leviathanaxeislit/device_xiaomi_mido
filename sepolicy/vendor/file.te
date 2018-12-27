@@ -31,3 +31,4 @@ type sysfs_torch, fs_type, sysfs_type;
 
 # kcal
 type sysfs_kcal, fs_type, sysfs_type;
+
