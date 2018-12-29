@@ -393,7 +393,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     XiaomiDoze \
-    XiaomiParts
+    AdvancedControls
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
