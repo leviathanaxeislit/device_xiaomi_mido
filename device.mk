@@ -393,7 +393,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
-    XiaomiDoze \
+    XiaomiParts \
     AdvancedControls
 
 PRODUCT_COPY_FILES += \
