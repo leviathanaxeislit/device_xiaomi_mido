@@ -27,7 +27,7 @@ package org.pixelexperience.keydisabler;
 
 public class KeyDisabler {
 
-    private static String CONTROL_PATH = "/proc/touchpanel/capacitive_keys_disable";
+    private static String CONTROL_PATH = "/sys/devices/soc/78b7000.i2c/i2c-3/3-0038/disable_keys";
 
     public static boolean isSupported() {
         return FileUtils.isFileWritable(CONTROL_PATH);
