@@ -169,8 +169,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
 
 # Key disabler
-JAVA_SOURCE_OVERLAYS := \
-    org.pixelexperience.keydisabler|$(DEVICE_PATH)/keydisabler|**/*.java
+JAVA_SOURCE_OVERLAYS := org.pixelexperience.keydisabler|$(DEVICE_PATH)/keydisabler|**/*.java
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true

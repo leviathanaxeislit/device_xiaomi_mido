@@ -55,4 +55,3 @@
 
 # Kcal
 /sys/devices/platform/kcal_ctrl.0/kcal              u:object_r:sysfs:s0
-
