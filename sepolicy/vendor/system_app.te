@@ -11,3 +11,6 @@ allow system_app sysfs:file rw_file_perms;
 # Navbar
 allow system_app proc_touchpanel:dir search;
 allow system_app proc_touchpanel:file write;
+
+# power
+allow system_app sysfs_battery_supply:file rw_file_perms;

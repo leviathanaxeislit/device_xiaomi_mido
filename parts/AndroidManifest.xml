@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD:doze/AndroidManifest.xml
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.custom.ambient.display"
-=======
 <!--
      Copyright (C) 2015-2016 The CyanogenMod Project
                    2017-2018 The LineageOS Project
@@ -21,7 +17,6 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lineageos.settings"
->>>>>>> b783b4f... sdm845-common: Convert XiaomiDoze into XiaomiParts:parts/AndroidManifest.xml
     android:versionCode="1"
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
@@ -32,42 +27,32 @@
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
     <uses-sdk
-        android:minSdkVersion="21"
-        android:targetSdkVersion="21"/>
+        android:minSdkVersion="24"
+        android:targetSdkVersion="24"/>
 
     <application
-        android:label="XiaomiDoze"
+        android:label="@string/device_settings_app_name"
         android:persistent="true">
 
-        <receiver android:name="com.custom.ambient.display.BootCompletedReceiver">
+        <receiver android:name=".BootCompletedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
-<<<<<<< HEAD:doze/AndroidManifest.xml
-        <service android:name="com.custom.ambient.display.DozeService"
-=======
         <service android:name=".doze.DozeService"
->>>>>>> b783b4f... sdm845-common: Convert XiaomiDoze into XiaomiParts:parts/AndroidManifest.xml
                  android:permission="XiaomiDozeService">
         </service>
 
         <activity
-<<<<<<< HEAD:doze/AndroidManifest.xml
-            android:name=".DozeSettings"
-=======
             android:name=".doze.DozeSettingsActivity"
->>>>>>> b783b4f... sdm845-common: Convert XiaomiDoze into XiaomiParts:parts/AndroidManifest.xml
             android:label="@string/ambient_display_title"
-            android:theme="@android:style/Theme.DeviceDefault.Settings">
-        <intent-filter>
-                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
-             </intent-filter>
-             <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.display" />
+            android:theme="@style/Theme.Main">
+            <intent-filter>
+                <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
     </application>
