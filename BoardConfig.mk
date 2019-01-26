@@ -173,6 +173,7 @@ JAVA_SOURCE_OVERLAYS := org.pixelexperience.keydisabler|$(DEVICE_PATH)/keydisabl
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
+TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
