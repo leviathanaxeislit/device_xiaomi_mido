@@ -97,7 +97,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
-    tinymix
+    tinymix \
     AntHalService \
     antradio_app \
     libantradio
