@@ -22,8 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
+$(call inherit-product, vendor/aosp/config/common.mk)
 TARGET_GAPPS_ARCH := arm64
 export CUSTOM_BUILD_TYPE=OFFICIAL
 
