@@ -171,7 +171,7 @@ on boot
     # Set the default message loglevel to KERN_INFO
     write /proc/sys/kernel/printk "6 6 1 7"
 
-    # Notification LED
+<<<<<<< H
     chown system system /sys/class/leds/red/blink
     chown system system /sys/class/leds/green/blink
     chown system system /sys/class/leds/blue/blink
@@ -193,9 +193,6 @@ on boot
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
-
-    # Start RIL daemon
-    start ril-daemon
 
     # Create directory used by display clients
     mkdir /data/vendor/display 0770 system graphics
