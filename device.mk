@@ -229,8 +229,7 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.manager@1.0
+    android.hidl.base@1.0
 
 # IMS
 PRODUCT_PACKAGES += \
