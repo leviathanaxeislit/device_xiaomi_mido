@@ -1,11 +1,3 @@
-# AdvancedControls
-allow system_app sysfs_kcal:dir search;
-allow system_app sysfs_kcal:file rw_file_perms;
-allow system_app sysfs_torch:dir search;
-allow system_app sysfs_torch:file rw_file_perms;
-allow system_app sysfs_vibrator:dir search;
-allow system_app sysfs_vibrator:file rw_file_perms;
-
 # Navbar
 allow system_app proc_touchpanel:dir search;
 allow system_app proc_touchpanel:file write;
