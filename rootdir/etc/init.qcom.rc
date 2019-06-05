@@ -166,6 +166,10 @@ on boot
     chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
     chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
 
+    # Reduce default Yellow flashlight
+    write /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness 0
+    write /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_1/max_brightness 0
+
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
     # Create hvdcp_opti directory
