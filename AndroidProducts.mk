@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_mido.mk
+    $(LOCAL_DIR)/validus_mido.mk
