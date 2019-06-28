@@ -159,8 +159,8 @@ on boot
     chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
 
     # Reduce default Yellow flashlight
-    write /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness 0
-    write /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_1/max_brightness 0
+    write /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness 25
+    write /sys/devices/soc/qpnp-flash-led-25/leds/led:flash_1/max_brightness 25
 
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
