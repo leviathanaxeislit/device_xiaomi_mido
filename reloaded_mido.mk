@@ -23,7 +23,7 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 
 # Inherit some common Reloaded-CAF stuff.
 $(call inherit-product, vendor/reloaded/config/common.mk)
-include device/qcom/common/common.mk
+
 
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 1080
